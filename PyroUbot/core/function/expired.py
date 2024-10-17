@@ -29,7 +29,7 @@ async def expired_userbot(X):
                 MSG.EXPIRED_MSG_BOT(X),
                 reply_markup=InlineKeyboardMarkup(Button.expired_button_bot()),
             )
-            await bot.send_message(X.me.id, "<b>💬 Masa Aktif Lu Udah Habis Makannya Beli Lagi")
+            await bot.send_message(X.me.id, "<b>💬 Abis Nyet Beli Lagi Lahh")
     except Exception as e:
         print(f"Error: - {X.me.id} - :{str(e)}")
 
