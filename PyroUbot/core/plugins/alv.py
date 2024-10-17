@@ -10,7 +10,7 @@ from PyroUbot import *
 
 
 async def alive_cmd(client, message):
-    msg = await message.reply("<blockquote><b>Sabar Bego Gasabar Gua Cekek Lu</b></blockquote>", quote=True)
+    msg = await message.reply("<blockquote><b>Sabar Sabar Nyet Di Cek Dulu</b></blockquote>", quote=True)
     try:
         x = await client.get_inline_bot_results(bot.me.username, f"alive {message.id} {client.me.id}")
         await message.reply_inline_bot_result(x.query_id, x.results[0].id, quote=True)
@@ -35,7 +35,7 @@ async def alive_query(client, inline_query):
             if my.me.id == OWNER_ID:
                 status = "<b>Presiden</b> <code>[Presiden]</code>"
             elif my.me.id in await get_seles():
-                status = "<b>Seles [Babu]</b>"
+                status = "<b>Seles [KACUNG]</b>"
             else:
                 status = "<b>Premium [Buyer]"
             button = Button.alive(get_id)
