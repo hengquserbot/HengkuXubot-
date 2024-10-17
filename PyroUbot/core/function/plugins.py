@@ -20,11 +20,11 @@ async def loadPlugins():
             imported_module.__MODULE__ = imported_module.__MODULE__
             if hasattr(imported_module, "__HELP__") and imported_module.__HELP__:
                 HELP_COMMANDS[imported_module.__MODULE__.replace(" ", "_").lower()] = imported_module
-    print(f"[🤖 @{bot.me.username} 🤖] [🔥 TELAH BERHASIL DIAKTIFKAN! 🔥]")
+    print(f"[🤖 @{bot.me.username} 🤖] [👑 AKTIP NYET! 👑]")
     TM = await bot.send_message(
         OWNER_ID,
         f"""
-<b>🤖 {bot.me.mention} Berhasil Di Aktifkan</b>
+<b>🤖 {bot.me.mention} Aktip Nyet</b>
 
 <b>📁 Modules: {len(HELP_COMMANDS)}</b>
 <b>📘 Python : {python_version()}</b>
