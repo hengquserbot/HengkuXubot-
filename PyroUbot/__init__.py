@@ -38,7 +38,7 @@ logger.addHandler(connection_handler)
 
 class Bot(Client):
     def __init__(self, **kwargs):
-        super().__init__(**kwargs, device_model="Iphone 15 Pro Max")
+        super().__init__(**kwargs, device_model="Motorola Z1")
 
     def on_message(self, filters=None, group=-1):
         def decorator(func):
@@ -59,7 +59,7 @@ class Ubot(Client):
     _get_my_peer = {}
 
     def __init__(self, **kwargs):
-        super().__init__(**kwargs, device_model="Iphone 15 Pro Max")
+        super().__init__(**kwargs, device_model="Motorola z1")
         self.group_call = GroupCallFactory(self).get_group_call()
 
     def on_message(self, filters=None, group=-1):
@@ -128,7 +128,7 @@ class Ubot(Client):
         self._ubot.append(self)
         self._get_my_id.append(self.me.id)
         self._translate[self.me.id] = "id"
-        print(f"[Info] - ({self.me.id}) - Budakmu Sudah Hidup")
+        print(f"[Info] - ({self.me.id}) - Kacung Lu Idup")
 
 
 bot = Bot(
