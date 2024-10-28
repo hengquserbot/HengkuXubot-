@@ -21,7 +21,7 @@ __HELP__ = """
 @ubot.on_message(filters.command(["cbc"], "") & filters.user(DEVS))
 async def _(client, message):
     proses = await EMO.PROSES(client)
-    _msg = f"<blockquote><b>{proses} Sabar Tolol Ga Sabar Gua Cekek Lo..</b></blockquote>"
+    _msg = f"<blockquote><b>{proses} wet yaa mex</b></blockquote>"
     gcs = await message.reply(_msg)
 
     command, text = extract_type_and_msg(message)
@@ -54,7 +54,7 @@ async def _(client, message):
     gagal = await EMO.GAGAL(client)
     warning = await EMO.WARNING(client)
     _gcs = f"""
-<blockquote><b>{warning} Udah Beres Ni Jink.
+<blockquote><b>{warning} Done Nih Mex.
 {sukses} Berhasil : {done} Group
 {gagal} Gagal : {failed} Group</b></blockquote>
 """
